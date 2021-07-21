@@ -138,6 +138,9 @@ module.exports = {
     webGLRenderer: true,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+	hypercwd: {
+      initialWorkingDirectory: '~/Documents/git_workspaces'
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -147,8 +150,9 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperline',
-    'hyper-snazzy'
+//     'hyperline',
+    'hyper-snazzy',
+    'hypercwd'
   ],
 
   // in development, you can create a directory under
